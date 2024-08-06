@@ -5,12 +5,14 @@ import re
 import base64
 from datetime import datetime 
 
+api_key = os.getenv('OPENAI_API_KEY')
+assistant_id = os.getenv('ASSISTANT_ID')
 # OpenAI 클라이언트 설정
-client_openai = OpenAI(
-  api_key='OPENAI_API_KEY'
-)
+client_openai = OpenAI(api_key=api_key)
+
+# OpenAI Assistant 생성
 assistant = client_openai.beta.assistants.retrieve(
-    assistant_id='assistant_id'
+    assistant_id=assistant_id
 )
 thread = client_openai.beta.threads.create()
 
