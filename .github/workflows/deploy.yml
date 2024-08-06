@@ -26,5 +26,6 @@ jobs:
       - name: Run Streamlit
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ASSISTANT_ID: ${{ secrets.ASSISTANT_ID }}
         run: |
-          streamlit run your_app.py  # your_app.py를 실제 파일명으로 변경
+          streamlit run app.py  # your_app.py를 실제 파일명으로 변경
