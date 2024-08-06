@@ -7,10 +7,10 @@ from datetime import datetime
 
 # OpenAI 클라이언트 설정
 client_openai = OpenAI(
-  api_key='sk-proj-EjUFuDFsnUqQrgduNdbYT3BlbkFJMqxgIdJyKifMD55Z6heg'
+  api_key='OPENAI_API_KEY'
 )
 assistant = client_openai.beta.assistants.retrieve(
-    assistant_id='asst_wuEQ7fL4GRmPaD1gix15bJmd'
+    assistant_id='assistant_id'
 )
 thread = client_openai.beta.threads.create()
 
