@@ -4,6 +4,7 @@ import time
 import re
 import base64
 from datetime import datetime 
+import os
 
 api_key = os.getenv('OPENAI_API_KEY')
 assistant_id = os.getenv('ASSISTANT_ID')
