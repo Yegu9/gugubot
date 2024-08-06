@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFF000 0%, #FFFFFF 100%);
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FFF000;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chat-bubble {
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-bubble {
+    background-color: #c2ff91;
+    color: #000000;
+    float: right;
+    clear: both;
+}
+
+.assistant-bubble {
+    background-color: #FFFFFF;
+    color: #000000;
+    float: left;
+    clear: both;
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.assistant-content {
+    flex-grow: 1;
+}
+
+.assistant-header {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.assistant-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.message-content {
+    margin-top: 5px;
+}
+
+/* 입력 필드 스타일 */
+.stTextInput > div > div > input {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    padding: 10px 15px;
+}
+
+/* 스피너 스타일 */
+.stSpinner > div > div > div {
+    border-top-color: #FFF000 !important;
+}
+
+/* Streamlit 기본 패딩 제거 */
+.stApp {
+    margin: 0;
+    padding: 0;
+}
+
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFF000 0%, #FFFFFF 100%) fixed;
+}
