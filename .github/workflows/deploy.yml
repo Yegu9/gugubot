@@ -21,11 +21,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # requirements.txt 파일에서 패키지 설치
+          pip install -r requirements.txt
 
       - name: Run Streamlit
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ASSISTANT_ID: ${{ secrets.ASSISTANT_ID }}
         run: |
-          streamlit run app.py  # your_app.py를 실제 파일명으로 변경
+          streamlit run app.py  # app.py를 실제 파일명으로 변경
